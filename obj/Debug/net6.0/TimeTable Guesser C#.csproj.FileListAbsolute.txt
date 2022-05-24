@@ -1,0 +1,15 @@
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\bin\Debug\net6.0\TimeTable Guesser C#.exe
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\bin\Debug\net6.0\TimeTable Guesser C#.deps.json
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\bin\Debug\net6.0\TimeTable Guesser C#.runtimeconfig.json
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\bin\Debug\net6.0\TimeTable Guesser C#.dll
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\bin\Debug\net6.0\TimeTable Guesser C#.pdb
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.AssemblyInfo.cs
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.dll
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\refint\TimeTable Guesser C#.dll
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.pdb
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\TimeTable Guesser C#.genruntimeconfig.cache
+C:\Users\hp\Documents\Code Files\Visual Studio Code\C#\TimeTable Guesser C#\obj\Debug\net6.0\ref\TimeTable Guesser C#.dll
