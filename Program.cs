@@ -8,11 +8,15 @@ namespace TimeTable
         static void Main(string[] args)
         {
             // Courses for monday, then we can guess where they are from there
-            string course1 = "";
-            string course2 = "";
-            string course3 = "";
-            string course4 = "";
-            string course5 = "";
+            string? course1 = "";
+            string? course2 = "";
+            string? course3 = "";
+            string? course4 = "";
+
+            string morningTea = "Morning Tea";
+            string lunch = "Lunch";
+            string la = "LA";
+            string iTime = "ITime";
 
             // These are both Lists to hold all the Courses, and the courses they take
             List<string> Courses = new List<string>();
@@ -39,18 +43,28 @@ namespace TimeTable
 
             foreach (var i in takenCourses)
             {
-                TakenCourses.Add(i);
+                TakenCourses.Add(i.ToUpper());
             }
 
-            string[][] grades = {
-                new string[] {  }, // MON 
+            Console.Write("First Period on Monday: ");
+            course1 = Console.ReadLine();
+
+            Console.Write("Second Period on Monday: ");
+            course2 = Console.ReadLine();
+
+            Console.Write("Third Period on Monday: ");
+            course3 = Console.ReadLine();
+
+            Console.Write("Fourth Period on Monday: ");
+            course4 = Console.ReadLine();
+
+            string[][] TimTable = {
+                new string[] { course1, morningTea, course2, la, lunch, course3, course4 }, // MON 
                 new string[] {  }, // TUES
                 new string[] {  }, // WED
                 new string[] {  }, // THURS
                 new string[] {  }  // FRI
             };
-
-
         }
     }
 }
