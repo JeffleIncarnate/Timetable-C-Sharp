@@ -66,13 +66,8 @@ namespace TimeTable
             Console.Write("Are you sure(y/n)?: ");
             char yn = Convert.ToChar(Console.ReadLine());
 
-            if (yn == 'y') Logic(TimeTable, course1, course2, course3, course4);
+            if (yn == 'y') ;
             else Console.WriteLine("Kill Yo Self'"); throw new Exception();
-        }
-
-        protected static void Logic(string[][] TT, string course1, string course2, string course3, string course4)
-        {
-            foreach (var item in TT[0]) Console.WriteLine(item);
         }
     }
 }
