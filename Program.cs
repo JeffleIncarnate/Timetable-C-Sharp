@@ -33,38 +33,46 @@ namespace TimeTable
 
 
             foreach (string course in Courses)
-            {
                 Console.Write(String.Format("{0}, ", course));
-            }
 
 
             Console.Write("\nPlease enter all your subjects (spaced with a ,): ");
             string[] takenCourses = Console.ReadLine().Split(',');
 
             foreach (var i in takenCourses)
-            {
                 TakenCourses.Add(i.ToUpper());
-            }
 
-            Console.Write("First Period on Monday: ");
-            course1 = Console.ReadLine();
+            Console.Write("First Period on Monday: "); course1 = Console.ReadLine();
 
-            Console.Write("Second Period on Monday: ");
-            course2 = Console.ReadLine();
+            Console.Write("Second Period on Monday: "); course2 = Console.ReadLine();
 
-            Console.Write("Third Period on Monday: ");
-            course3 = Console.ReadLine();
+            Console.Write("Third Period on Monday: "); course3 = Console.ReadLine();
 
-            Console.Write("Fourth Period on Monday: ");
-            course4 = Console.ReadLine();
+            Console.Write("Fourth Period on Monday: "); course4 = Console.ReadLine();
 
-            string[][] TimTable = {
+            string[][] TimeTable = {
                 new string[] { course1, morningTea, course2, la, lunch, course3, course4 }, // MON 
                 new string[] {  }, // TUES
                 new string[] {  }, // WED
                 new string[] {  }, // THURS
                 new string[] {  }  // FRI
             };
+
+            Console.WriteLine();
+            foreach (var items in TimeTable[0])
+                Console.WriteLine("{0}", items);
+            Console.WriteLine();
+
+            Console.Write("Are you sure(y/n)?: ");
+            char yn = Convert.ToChar(Console.ReadLine());
+
+            if (yn == 'y') Logic(TimeTable);
+            else Console.WriteLine("Kill Yo Self'");
+        }
+
+        protected static void Logic(string[][] TT)
+        {
+            foreach (var item in TT[0]) Console.WriteLine(item);
         }
     }
 }
