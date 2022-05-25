@@ -7,13 +7,14 @@ namespace TimeTable
     {
         static void Main(string[] args)
         {
+            // Courses for monday, then we can guess where they are from there
             string course1 = "";
             string course2 = "";
             string course3 = "";
             string course4 = "";
             string course5 = "";
 
-
+            // These are both Lists to hold all the Courses, and the courses they take
             List<string> Courses = new List<string>();
             List<string> TakenCourses = new List<string>();
 
@@ -41,7 +42,15 @@ namespace TimeTable
                 TakenCourses.Add(i);
             }
 
-            
+            string[][] grades = {
+                new string[] {  }, // MON 
+                new string[] {  }, // TUES
+                new string[] {  }, // WED
+                new string[] {  }, // THURS
+                new string[] {  }  // FRI
+            };
+
+
         }
     }
 }
