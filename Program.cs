@@ -51,11 +51,11 @@ namespace TimeTable
             Console.Write("Fourth Period on Monday: "); course4 = Console.ReadLine();
 
             string[][] TimeTable = {
-                new string[] { course1, morningTea, course2, la, lunch, course3, course4 }, // MON 
-                new string[] {  }, // TUES
-                new string[] {  }, // WED
-                new string[] {  }, // THURS
-                new string[] {  }  // FRI
+                new string[] { course1, morningTea, course2, la, lunch, course3, course4 }, // MON 0
+                new string[] { null, morningTea, null, null, lunch, iTime, null }, // TUES 1
+                new string[] { null, morningTea, null, lunch, null, null }, // WED 2
+                new string[] { null, iTime, lunch, null, null }, // THURS 3
+                new string[] { null, morningTea, la, lunch, null, null }  // FRI 4
             };
 
             Console.WriteLine();
@@ -64,10 +64,59 @@ namespace TimeTable
             Console.WriteLine();
 
             Console.Write("Are you sure(y/n)?: ");
-            char yn = Convert.ToChar(Console.ReadLine());
+            char yn = Convert.ToChar(Console.ReadLine().ToLower());
 
-            if (yn == 'y') ;
-            else Console.WriteLine("Kill Yo Self'"); throw new Exception();
+            if (yn == 'y') Console.WriteLine("Calculating...");
+            else
+            {
+                Console.WriteLine("Kill Yo Self'");
+                throw new Exception();
+            }
+
+            // Course 1
+            TimeTable[1][6] = course1;
+            TimeTable[3][3] = course1;
+
+            // Course 2
+            TimeTable[1][0] = course2;
+            TimeTable[3][4] = course2;
+
+            // Course 3
+            TimeTable[2][5] = course3;
+            TimeTable[3][4] = course3;
+
+            // Course 4
+            TimeTable[2][2] = course4;
+            TimeTable[4][4] = course4;
+
+            bool writeDays = false;
+
+            Console.WriteLine("");
+            for (int i = 0; i < TimeTable.Length; i++)
+            {
+                writeDays = false;
+                foreach (var item in TimeTable[i])
+                {
+                    if (writeDays == false)
+                    {
+                        writeDays = true;
+                        if (i == 0)
+                            Console.Write("Monday: ");
+                        else if (i == 1)
+                            Console.Write("Tuesday: ");
+                        else if (i == 2)
+                            Console.Write("Wednesday: ");
+                        else if (i == 3)
+                            Console.Write("Thursday: ");
+                        else if (i == 4)
+                            Console.Write("Friday: ");
+                    }
+
+                    Console.Write("{0} | ", item);
+                }
+                Console.WriteLine("");
+            }
+            Console.WriteLine("");
         }
     }
 }
