@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace TimeTable
 {
@@ -12,6 +13,8 @@ namespace TimeTable
             string? course2 = "";
             string? course3 = "";
             string? course4 = "";
+            string? course5 = null;
+            string? course6 = null;
 
             string morningTea = "Morning Tea";
             string lunch = "Lunch";
@@ -89,6 +92,25 @@ namespace TimeTable
             TimeTable[2][2] = course4;
             TimeTable[4][4] = course4;
 
+            foreach (var item in TakenCourses)
+            {
+                if (item == course1 || item == course2 || item == course3 || item == course4)
+                {
+                    continue;
+                }
+                else
+                {
+                    if (course5 is null)
+                    {
+                        course5 = item;
+                    }
+                    else
+                    {
+                        course6 = item;
+                    }
+                }
+            }
+
             bool writeDays = false;
 
             Console.WriteLine("");
@@ -117,6 +139,8 @@ namespace TimeTable
                 Console.WriteLine("");
             }
             Console.WriteLine("");
+
+            Console.WriteLine("{0} {1}", course5, course6);
         }
     }
 }
