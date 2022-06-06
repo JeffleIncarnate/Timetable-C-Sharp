@@ -86,7 +86,7 @@ namespace TimeTable
 
             // Course 3
             TimeTable[2][5] = course3;
-            TimeTable[3][4] = course3;
+            TimeTable[3][0] = course3;
 
             // Course 4
             TimeTable[2][2] = course4;
@@ -110,6 +110,14 @@ namespace TimeTable
                     }
                 }
             }
+
+            TimeTable[1][2] = course5;
+            TimeTable[2][4] = course5;
+            TimeTable[4][0] = course5;
+
+            TimeTable[1][3] = course6;
+            TimeTable[2][0] = course6;
+            TimeTable[4][5] = course6;
 
             bool writeDays = false;
 
